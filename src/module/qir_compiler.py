@@ -1,7 +1,7 @@
 from .qir_spec import QIRSpec
 from qadence import QuantumCircuit
 import pyqir
-import pyqir.patterns as patterns
+from pyqir.patterns import *
 import pyqir.passes as passes
 import pyqir.transforms as transforms
 
