@@ -1,0 +1,14 @@
+circomputation teleport(qbit q0, qbit q1, qbit q2, cbit c0, cbit c1) {
+  // Encode the quantum state on q0
+  h q0;
+  cx q0, q1;
+  // Measure q0 and store the result in c0
+  measure q0 -> c0;
+  // Apply corrections to q2 based on c0 and c1
+  if (c0 == 0) {
+    x q2;
+  }
+  if (c1 == 0) {
+    z q2;
+  }
+}
