@@ -1,0 +1,1 @@
+Quantum Intermediate Representation (QIR) project structure and implementation.
