@@ -1,5 +1,5 @@
 import unittest
-from src.qir_compiler.qir_runner import QIRRunner
+from src.module.qir_runner import QIRRunner
 
 class TestTeleport(unittest.TestCase):
     def test_teleport(self):

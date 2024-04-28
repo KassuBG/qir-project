@@ -1,5 +1,5 @@
 import unittest
-from src.qir_compiler.qir_compiler import QIRCompiler
+from src.module.qir_compiler import QIRCompiler
 
 class TestQIRCompiler(unittest.TestCase):
     def test_compile(self):

@@ -1,5 +1,5 @@
 import unittest
-from src.qir_compiler.qir_runner import QIRRunner
+from src.module.qir_runner import QIRRunner
 
 class TestQIRRunner(unittest.TestCase):
     def test_run(self):

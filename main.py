@@ -1,6 +1,6 @@
 import sys
-from src.qir_compiler.qir_runner import QIRRunner
-from src.qir_compiler.base_profile import BaseProfile
+from src.module.qir_runner import QIRRunner
+from src.module.base_profile import BaseProfile
 
 from enum import Enum
 from qadence import QuantumCircuit
