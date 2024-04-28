@@ -2,6 +2,9 @@ import sys
 from src.qir_compiler.qir_runner import QIRRunner
 from src.qir_compiler.base_profile import BaseProfile
 
+from enum import Enum
+from qadence import QuantumCircuit
+
 ''' 
 1. It imports the BaseProfile class from the src/qir_compiler module, which is used to 
     define the measurement basis.
