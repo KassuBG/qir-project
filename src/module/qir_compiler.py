@@ -5,6 +5,11 @@ import pyqir.patterns as patterns
 import pyqir.passes as passes
 import pyqir.transforms as transforms
 
+
+""" This implementation uses 'pyqir' package to parse and manipulate the QIR module. 
+    It applies a series of passes to optimize the module, and then creates a QuantumCircuit object 
+    from the optimized module.
+"""
 class QIRCompiler:
     def __init__(self, qir_spec: QIRSpec):
         self.qir_spec = qir_spec
