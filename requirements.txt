@@ -1,3 +1,6 @@
 qadence==1.5.1
 pyqir
+numpy
+scipy
+matplotlib
 -e .
