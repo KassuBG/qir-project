@@ -4,9 +4,15 @@ from qadence import Simulator
 class QIRRunner:
     def __init__(self, qir_compiler: QIRCompiler):
         self.qir_compiler = qir_compiler
+        self.results = []
 
-    def run(self) -> str:
-        # Run the compiled QIR intermediate representation
+    def run(self):
+        # Compile the QIR code
+        circuit = self.qir_compiler.compile()
+
+        # Execute the Qadence circuit
         simulator = Simulator()
-        simulator.run(self.qir_compiler.compile())
-        return simulator.output
+        simulator.run(circuit)
+
+        # Return the measurement results
+        return self.results
