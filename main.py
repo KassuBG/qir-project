@@ -11,11 +11,12 @@ from qadence import QuantumCircuit
 4. It measures the output of the circuit using the measure method of the QIRRunner class, 
     and repeats the measurement 10 times.
 5. It validates the results by counting the number of times each possible output is measured, 
-    and checks if the expected output is among the measured outputs'''
+    and checks if the expected output is among the measured outputs
+'''
 
 def main():
     # Set up the QIR compiler and runner
-    qir_compiler = QIRCompiler(QIRSpec('teleport.qir'))
+    qir_compiler = QIRCompiler(QIRSpec('teleport.qs'))
     qir_runner = QIRRunner(qir_compiler)
 
     output = qir_runner.run()
@@ -41,3 +42,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+    
